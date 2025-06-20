@@ -1,12 +1,9 @@
-import { Button } from "@/components/ui/button";
+import Hero from "@/components/sections/Hero";
 
 export default function Home() {
   return (
-    <div className="text-center my-10">
-      {" "}
-      <h1 className="text-6xl font-bold ">Hare Krishna</h1>
-
-      <Button className="mt-5">Hare Krishna</Button>
+    <div className="w-full">
+      <Hero />
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "../styles/globals.css";
 import "../styles/fonts.css";
+import RootProvider from "@/providers/RootProvider";
 
 export const metadata: Metadata = {
   title: "devlop.me - home",
@@ -14,7 +15,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="font-sans antialiased">{children}</body>
+      <body className="font-sans antialiased w-full mx-auto max-w-[1440px] h-[100vh]">
+        <RootProvider>{children}</RootProvider>
+      </body>
     </html>
   );
 }
